@@ -1,6 +1,6 @@
 # ambedkar
 
-#This project consists of some static site 
+#consists of 
 abvgk
 ampackers
 eyeworld
