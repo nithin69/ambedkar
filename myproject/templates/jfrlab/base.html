@@ -1,0 +1,356 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>J F RESEARCH LAB</title>
+
+
+
+	<!-- Style CSS -->
+
+    <link rel="stylesheet" type="text/css" href="/static/jfr-static/style.css">
+
+    <!-- Responsive CSS -->
+
+    <link rel="stylesheet" type="text/css" href="/static/jfr-static/css/responsive.css">
+
+    
+
+</head>
+
+
+
+<body class="home3 header3">
+
+	
+
+
+
+
+
+	<div id="wrapper">
+
+		<header id="header" class="site-header">
+
+			<div class="mid-header" style="padding-top:0px;">
+
+				<div class="container">
+
+					<div class="row">
+
+						<div class="col-md-12" >
+
+							<div class="site-brand">
+
+							<a href="/jfr/" title="J.F Research Lab">
+                            <h1 class="logo-title" style="margin-left: 300px;" >Joseph's Fundamental Research Laboratory</h1>
+                        </a>
+
+								
+							</div><!-- .site-brand -->
+
+						</div>
+
+					
+					</div><!-- .row -->
+
+				</div><!-- .container -->
+
+			</div><!-- .mid-header -->
+
+
+
+			<div class="bot-header">
+
+				<div class="container">
+
+					<nav class="main-menu" style="padding-top: 10px;margin-left: 370px;">
+
+						<span class="mobile-btn"><i class="fa fa-bars"></i></span>
+
+						<ul>
+						
+							<li {% if request.path == "/jfr/"%} class="current-menu-item" {% else %} class = "inactive" {% endif %}><a href="/jfr/">Home</a>
+
+
+							</li>
+
+							<li  {% if request.path == "/jfr/about/"%} class="current-menu-item" {% else %} class = "inactive" {% endif %}><a href="/jfr/about/">About</a></li>
+							
+							<li  {% if request.path == "/jfr/research/"%} class="current-menu-item" {% else %} class = "inactive" {% endif %}><a href="/jfr/research/">Research</a></li>
+							
+							<li><a href="#">Gallery</a></li>
+
+							<li  {% if request.path == "/jfr/contactus/"%} class="current-menu-item" {% else %} class = "inactive" {% endif %}><a href="/jfr/contactus/">Contact</a></li>
+
+						</ul>
+
+					</nav>
+
+				</div><!-- .container -->
+
+			</div><!-- .bot-header -->
+			
+			<script src="/static/jfr-static/images/placeholder/js/jssor.slider-21.1.6.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.0.4/js/bootstrap.min.js"></script>
+    <script>
+        jssor_1_slider_init = function() {
+            function o() {
+                var s = e.$Elmt.parentNode.clientWidth;
+                s ? (s = Math.min(s, 1920), e.$ScaleWidth(s)) : window.setTimeout(o, 30)
+            }
+            var s = [
+                    [{
+                        b: -1,
+                        d: 1,
+                        o: -1
+                    }, {
+                        b: 0,
+                        d: 1e3,
+                        o: 1
+                    }],
+                    [{
+                        b: 1900,
+                        d: 2e3,
+                        x: -379,
+                        e: {
+                            x: 7
+                        }
+                    }],
+                    [{
+                        b: 1900,
+                        d: 2e3,
+                        x: -379,
+                        e: {
+                            x: 7
+                        }
+                    }],
+                    [{
+                        b: -1,
+                        d: 1,
+                        o: -1,
+                        r: 288,
+                        sX: 9,
+                        sY: 9
+                    }, {
+                        b: 1e3,
+                        d: 900,
+                        x: -1400,
+                        y: -660,
+                        o: 1,
+                        r: -288,
+                        sX: -9,
+                        sY: -9,
+                        e: {
+                            r: 6
+                        }
+                    }, {
+                        b: 1900,
+                        d: 1600,
+                        x: -200,
+                        o: -1,
+                        e: {
+                            x: 16
+                        }
+                    }]
+                ],
+                i = {
+                    $AutoPlay: !0,
+                    $SlideDuration: 800,
+                    $SlideEasing: $Jease$.$OutQuint,
+                    $CaptionSliderOptions: {
+                        $Class: $JssorCaptionSlideo$,
+                        $Transitions: s
+                    },
+                    $ArrowNavigatorOptions: {
+                        $Class: $JssorArrowNavigator$
+                    },
+                    $BulletNavigatorOptions: {
+                        $Class: $JssorBulletNavigator$
+                    }
+                },
+                e = new $JssorSlider$("jssor_1", i);
+            o(), $Jssor$.$AddEvent(window, "load", o), $Jssor$.$AddEvent(window, "resize", o), $Jssor$.$AddEvent(window, "orientationchange", o)
+        }
+    </script>
+    <script>
+        $('#myCarousel').carousel({
+            interval: 3000
+        }); /* SLIDE ON CLICK */
+        $('.carousel-linked-nav > li > a').click(function() { // grab href, remove pound sign, convert to number var item=Number($(this).attr('href').substring(1)); // slide to number -1 (account for zero indexing) $('#myCarousel').carousel(item - 1); // remove current active class $('.carousel-linked-nav .active').removeClass('active'); // add active class to just clicked on item $(this).parent().addClass('active'); // don't follow the link return false;});/* AUTOPLAY NAV HIGHLIGHT */// bind 'slid' function$('#myCarousel').bind('slid', function(){// remove active class $('.carousel-linked-nav .active').removeClass('active'); // get index of currently active item var idx=$('#myCarousel .item.active').index(); // select currently active item and add active class $('.carousel-linked-nav li:eq(' + idx + ')').addClass('active');});
+    </script>
+    <style>
+        .jssorb05 {
+            position: absolute
+        }
+        
+        .jssorb05 .av,
+        .jssorb05 div,
+        .jssorb05 div:hover {
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            overflow: hidden;
+            cursor: pointer
+        }
+        
+        .jssorb05 div {
+            background-position: -7px -7px
+        }
+        
+        .jssorb05 .av:hover,
+        .jssorb05 div:hover {
+            background-position: -37px -7px
+        }
+        
+        .jssorb05 .av {
+            background-position: -67px -7px
+        }
+        
+        .jssorb05 .dn,
+        .jssorb05 .dn:hover {
+            background-position: -97px -7px
+        }
+        
+        .jssora22l,
+        .jssora22r {
+            display: block;
+            position: absolute;
+            width: 40px;
+            height: 58px;
+            cursor: pointer;
+            background: url(/static/jfr-static/images/placeholder/img/a22.png) center center no-repeat;
+            overflow: hidden
+        }
+        
+        .jssora22l {
+            background-position: -10px -31px
+        }
+        
+        .jssora22r {
+            background-position: -70px -31px
+        }
+        
+        .jssora22l:hover {
+            background-position: -130px -31px
+        }
+        
+        .jssora22r:hover {
+            background-position: -190px -31px
+        }
+        
+        .jssora22l.jssora22ldn {
+            background-position: -250px -31px
+        }
+        
+        .jssora22r.jssora22rdn {
+            background-position: -310px -31px
+        }
+        
+        .jssora22l.jssora22lds {
+            background-position: -10px -31px;
+            opacity: .3;
+            pointer-events: none
+        }
+        
+        .jssora22r.jssora22rds {
+            background-position: -70px -31px;
+            opacity: .3;
+            pointer-events: none
+        }
+    </style>
+
+{% block body_block %}
+
+{% endblock %} 
+
+<footer id="footer" class="site-footer">
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-xs-12 text-center">
+                    Designed By: <a href="http://www.vizagwebsource.in/" target="_blank" rel="nofollow" title="Regina Lite">WebHub Source</a> · Published By: <a href="https://www.sourceyellowpages.com/" rel="dofollow" title="Professional Theme">Source Yellow Pages</a> © Copyright 2016. All Rights Reserved.  
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="http://www.reliablecounter.com" target="_blank"><img src="http://www.reliablecounter.com/count.php?page=jfrlab.com&digit=style/plain/1/&reloads=0" alt="" title="" border="0"></a><br /><a href="http://" target="_blank" style="font-family: Geneva, Arial; font-size: 9px; color: #330010; text-decoration: none;"></a>
+
+
+</div>
+
+
+
+   
+
+
+            </div>
+
+
+
+					
+
+				</div>
+
+			</div><!-- .container -->
+
+		</footer><!-- .site-footer -->
+
+	</div><!-- #wrapper -->
+
+
+
+	<!-- jQuery -->    
+
+    <script src="/static/jfr-static/js/jquery-1.11.3.js"></script>
+
+    <!-- Boostrap -->
+
+    <script src="/static/jfr-static/js/vendor/bootstrap.min.js"></script>
+
+    <!-- Jquery Parallax -->
+
+    <script src="/static/jfr-static/js/vendor/parallax.min.js"></script>
+
+    <!-- jQuery UI -->
+
+	<script src="/static/jfr-static/js/vendor/jquery-ui.min.js"></script>
+
+	<!-- jQuery Sticky -->
+
+	<script src="/static/jfr-static/js/vendor/jquery.sticky.js"></script>
+
+	<!-- OWL CAROUSEL Slider -->    
+
+    <script src="/static/jfr-static/js/vendor/owl.carousel.js"></script>
+
+    <!-- PrettyPhoto -->   
+
+    <script src="/static/jfr-static/js/vendor/jquery.prettyPhoto.js"></script>
+
+    <!-- Jquery Isotope -->
+
+    <script src="/static/jfr-static/js/vendor/isotope.pkgd.min.js"></script>
+
+    <!-- Main -->    
+
+    <script src="/static/jfr-static/js/main.js"></script>
+
+    <!-- Google Map -->
+
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+
+   
+
+</body>
+
+
+</html>

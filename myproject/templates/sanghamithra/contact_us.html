@@ -1,0 +1,110 @@
+
+{% extends "base.html" %}
+
+{% block title %}Sanghamithra Group Of Services{% endblock %}
+
+{% block body_block %}
+
+
+
+<div class="page-content">
+<div class="banner-text">
+<div class="title">Contact Us</div>
+Reach us by Phone, Email or at 
+any of our offices across India 
+and the world</div>
+<img src="/static/sanga-static/images/contact.jpg" alt="" class="slider-img"> </div>
+<div class="banner"> </div>
+
+<div class="clear"></div>
+ 
+<section class="inner-pages-detail product-listing">
+  <div class="section-mid">
+   
+<div class="fullwidth contactus brief-text">
+<div class="headoffice">
+<div class="address1">
+<h3>SANGHAMITHRA</h3>
+<h4>Head Office </h4>
+<p>
+Seethammadhara </br>
+N.E. Vuda Shopping Complex  </br>
+Shop No. 1, TPT Colony,VSP - 13.<br />
+Contact: ALLA SURI BABU <br />
+<i class="fa fa-phone"></i> 93 92 200 200<br />
+Join us for better india<br/>
+<i class="fa fa-envelope"></i> www.myresponsibility.co.in 
+</p>
+
+
+<h4>Branch Office </h4>
+<p>
+Akkayyapalem, Main Road<br />
+K.A.B Complex<br />
+1st Floor, Shop No. 2, VSP - 16.<br />
+DIRECT CALL : 93 93 900 900<br />
+HELP LINE   : 93 93 200 200
+</p>
+
+<p>
+Ph: 0891 - 2545454 / SMS : 0891-600 600 0<br/>
+Ph: 0891 -  646464 2to8 / 0891-600 600 2to9
+</p>
+
+<p> E-mail: sanghamithraservices@gmail.com<br/>
+       web: www.sanghamithragroup.com
+	   </p>
+</div>
+
+
+
+
+<div class="map1">
+<div id="googleMap"  style="width:500px;height:380px;"></div>
+
+
+<script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+<script>
+function initialize() {
+
+  var mapProp = {
+    center:new google.maps.LatLng(28.4816,77.3109),
+    zoom:18,
+    mapTypeId:google.maps.MapTypeId.ROADMAP,
+	 
+	 
+	 
+  };
+   marker = new google.maps.Marker({
+        position: new google.maps.LatLng(28.4816,77.3109),
+        map: new google.maps.Map(document.getElementById("googleMap"), mapProp),
+		title: 'Test',
+      });
+	   markers.push(marker);
+  var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
+}
+google.maps.event.addDomListener(window, 'load',initialize);
+</script>
+
+
+
+
+
+<!-- <img src="images/headoffice.jpg" />-->
+</div>
+</div> 
+</div>
+
+
+
+
+    
+    
+    </div>
+</section> 
+<div class="clear"></div>
+
+
+{% endblock %}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>SHABBAR MUSTAFA TRADING COMPANY</title>
+<link href="/static/occ-static/css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="/static/occ-static/css/style.css" type="text/css" rel="stylesheet" media="all">
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Crops Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //Custom Theme files -->
+<!-- js -->
+<script src="/static/occ-static/js/jquery-1.11.1.min.js"></script> 
+<!-- //js -->	
+<!-- start-smoth-scrolling-->
+<script type="text/javascript" src="/static/occ-static/js/move-top.js"></script>
+<script type="text/javascript" src="/static/occ-static/js/easing.js"></script>	
+<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+</script>
+<!--//end-smoth-scrolling-->
+
+</head>
+<body>
+	<!--header-->
+	<div class="logo">
+		<div class="container">
+			<div class="logo-info">
+				<a href="index.html">
+				<img src="/static/occ-static/images/trading.png" alt="" style="float:left;"/>
+					<h1>Shabbar Mustafa Trading Company</h1>	
+					
+				</a>
+			</div>
+		</div>	
+	</div>
+	<!--//header-->		
+	<!--navigation-->
+	<div class="top-nav">
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Menu						
+				</button>
+			</div>
+			<!--  
+			<li {% if request.path == "/" %} class="active"  {% else %} class="wactive" {% endif %} >
+			     <a href="/" title="home"><img src ="/media/home.png" alt="home" style="width:40px; height:30px;"> &nbsp; Home</a>
+			</li>
+			<li {% if request.path == "/govt/" %} class="active"{% else %} class="wactive" {% endif %}>                            
+				 <a href="/govt/" title="govt"><img src ="/media/govt.png" alt="government offices" style="width:40px; height:30px;">  Government Offices</a> 
+			</li> 
+			<li {% if request.path == "/touristplaces/" %} class="active"{% else %} class="wactive" {% endif %}>                           
+			<a href="/touristplaces/" title="touristplaces"><img src ="/media/tour.png" alt="tourist places" style="width:40px; height:30px;">&nbsp; Tourist Places</a>    
+			</li>
+
+
+			-->
+
+
+
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li {% if request.path == "/occ/" %} class="hvr-bounce-to-bottom active" {% else %} class="hvr-bounce-to-bottom" {% endif %}> <a href="/occ/">Home</a></li>
+					<li {% if request.path == "/occ/about/" %} class="hvr-bounce-to-bottom active" {% else %} class="hvr-bounce-to-bottom" {% endif %}> <a href="/occ/about/">About</a></li>
+					<li {% if request.path == "/occ/gallery/" %} class="hvr-bounce-to-bottom active" {% else %} class="hvr-bounce-to-bottom" {% endif %}> <a href="/occ/gallery/">Our Products</a></li>
+					<li {% if request.path == "/occ/contact/" %} class="hvr-bounce-to-bottom active" {% else %} class="hvr-bounce-to-bottom" {% endif %}> <a href="/occ/contact/">Contact Us</a></li>
+					<!--<li class="hvr-bounce-to-bottom"><a href="/occ/about/">About</a></li>
+					<li class="hvr-bounce-to-bottom"><a href="/occ/gallery">Our Products</a></li>
+					<li class="hvr-bounce-to-bottom"><a href="/occ/contact/">Contact Us</a></li>  -->
+				</ul>	
+				<div class="clearfix"> </div>
+			</div>	
+		</nav>		
+	</div>	
+	
+{% block body_block %}
+
+            {% endblock %}	
+	
+	
+	
+	
+	<div class="copy">
+		<div class="container">
+			<div class="copy-left">
+				<p>Copyright © 2017 Shabbar Mustafa Trading Company. All rights reserved | Design by <a href="http://delevere.com/" target="_blank">Delevere</a></p>
+			</div>
+			<div class="social-icons">
+				<ul>
+					<li><a href="#" class="fb"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#" class="gg"></a></li>
+					<li><a href="#" class="pn"></a></li>					
+				</ul>	
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!--//footer-->
+	<!--smooth-scrolling-of-move-up-->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+			};
+			*/
+			
+			$().UItoTop({ easingType: 'easeOutQuart' });
+			
+		});
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	
+    <script src="/static/occ-static/js/bootstrap.js"></script>
+</body>
+</html>

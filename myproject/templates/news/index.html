@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="https://pingendo.com/assets/bootstrap/bootstrap-4.0.0-beta.1.css" type="text/css"> 
+  <link rel="stylesheet" type="text/css" href="/static/ticker.css">
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+
+  </head>
+
+<body style="background-color: lavender;">
+
+  <div class="py-5">
+    <div class="row" style="margin-left: 0px;margin-right: 0px;">
+      <div class="col-md-10" style="margin-left: 0px;">
+        <div class="row">
+          {% for n in News %}
+		  <div class="col-md-4">
+		  <a href="/newsapp/{{n.id}}/">
+          <img src="/media/{{n.graph }}" alt="{{n.title}}" class="img-fluid" style="border-radius: 13px;margin-bottom: 10px; height: 250px; width: 400px;">
+		  </a>
+		  </div>
+		  {% endfor %}
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+              <img class="d-block img-fluid" src="/static/333.png" data-holder-rendered="true">
+             
+            </div>
+            <div class="carousel-item">
+              <img class="d-block img-fluid" src="/static/333.png" data-holder-rendered="true">
+             
+            </div>
+          </div>
+          </div>
+      </div>
+	 
+    </div>
+	
+<div class="ticker-container" style="background-color: #F57E31;">
+  <div class="ticker-caption">
+    <p>NEWS</p>
+  </div>
+
+  {% for m in Marquee %}
+    <div>
+     <marquee>{{m.line1}}</marquee>
+    </div>
+  {% endfor %}
+</div>
+<div class="ticker-container" style="background-color: #F57E31;">
+  <div class="ticker-caption">
+    <p>NEWS</p>
+  </div>
+
+  {% for m in Marquee %}
+    <div>
+     <marquee>{{m.line2}}</marquee>
+    </div>
+  {% endfor %}
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> 
+<script src="/static/ticker.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+	
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+</body>
+
+</html>

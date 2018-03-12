@@ -1,0 +1,89 @@
+
+{% extends "base.html" %}
+
+{% block title %}My Maths{% endblock %}
+
+{% block content %}    
+    
+        <!-- ******CONTENT****** --> 
+        <div class="content container">
+            <div class="page-wrapper">
+                <header class="page-heading clearfix">
+                    <h1 class="heading-title pull-left">Contact</h1>
+                    <div class="breadcrumbs pull-right">
+                        <ul class="breadcrumbs-list">
+                            <li class="breadcrumbs-label">You are here:</li>
+                            <li><a href="index-2.html">Home</a><i class="fa fa-angle-right"></i></li>
+                            <li class="current">Contact</li>
+                        </ul>
+                    </div><!--//breadcrumbs-->
+                </header> 
+                <div class="page-content">
+                    <div class="row">
+                        <article class="contact-form col-md-8 col-sm-7  page-row">                            
+                            <h3 class="title">Get in touch</h3>
+							{% if done %}
+						<p>Thank you for your Registration we will get back to you soon</p>
+					{% else %}
+                             <form action="/contact">
+                                <div class="form-group name">
+                                    <label for="name">Name</label>
+                                    <input id="name" name= "name" type="text" class="form-control" placeholder="Enter your name">
+                                </div><!--//form-group-->
+                                <div class="form-group email">
+                                    <label for="email">Email<span class="required">*</span></label>
+                                    <input id="email" name= "email" type="email" class="form-control" placeholder="Enter your email">
+                                </div><!--//form-group-->
+                                <div class="form-group phone">
+                                    <label for="phone">Phone</label>
+                                    <input id="phone" name= "phone" type="tel" class="form-control" placeholder="Enter your contact number">
+                                </div><!--//form-group-->
+                                <div class="form-group message">
+                                    <label for="message">Message<span class="required">*</span></label>
+                                    <textarea id="message" name= "message" class="form-control" rows="6" placeholder="Enter your message here..."></textarea>
+                                </div><!--//form-group-->
+                                <button type="submit" class="btn btn-theme">Send message</button>
+                            </form> 
+						{% endif %}
+                        </article><!--//contact-form-->
+                        <aside class="page-sidebar  col-md-3 col-md-offset-1 col-sm-4 col-sm-offset-1">
+                             
+                            
+                            <section class="links">
+                        <h1 class="section-heading text-highlight"><span class="line">Postal Address</span></h1>
+                        <div class="section-content">
+                                <p class="adr">
+                                    <span class="adr-group">       
+                                        <span class="street-address"># 52-14-80, Dr B.R Ambedkar Bhavan </span><br>
+                                       <span class="region">Opp Govt. Eye Hospital</span><br>
+                                    <span class="postal-code">Beside bullaya college, Srinagar</span><br>
+                                    <span class="country-name">Visakhapatnam-17</span>
+                                    </span>
+                                </p>
+                            </div><!--//section-content-->
+                    </section><!--//links-->    
+                            
+                            <section class="links">
+                        <h1 class="section-heading text-highlight"><span class="line">All Enquiries</span></h1>
+                        <div class="section-content">
+                           
+                                 <p class="tel"><i class="fa fa-phone"></i>Tel: 0891 2541130</p>
+                                <p class="email"><i class="fa fa-envelope"></i>Email: <a href="#">ambedkarbhavanvsp1978@gmail.com</a></p>
+                        </div><!--//section-content-->
+                    </section><!--//links-->
+
+						
+                        </aside><!--//page-sidebar-->
+                    </div><!--//page-row-->
+                    <div class="page-row">
+                        <article class="map-section">
+                            <h3 class="title">How to find us</h3>
+                           <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="450" id="gmap_canvas" src="https://maps.google.com/maps?q=Dr%20Ambedkar%20Bhavan%2C%20Old%20TB%20Hospital%20Area%2C%20Dwaraka%20Nagar%2C%20Visakhapatnam%2C%20Andhra%20Pradesh%20530016&t=&z=16&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>embed google map with <a href="http://www.embedgooglemap.net">embedgooglemap.net</a></div><style>.mapouter{overflow:hidden;height:450px;width:600px;}.gmap_canvas {background:none!important;height:450px;width:600px;}</style></div>
+                        </article><!--//map-->
+                    </div><!--//page-row-->
+                </div><!--//page-content-->
+            </div><!--//page-wrapper--> 
+        </div><!--//content-->
+    </div><!--//wrapper-->
+
+{% endblock %}

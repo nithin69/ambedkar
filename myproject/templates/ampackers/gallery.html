@@ -1,0 +1,127 @@
+{% extends "base2.html" %}
+
+{% block title %}Amaravathi{% endblock %}
+{% block content %}
+  <section class="about_page_barner_area">
+            <div class="barner_content">
+                <div class="container">
+                   <div class="row">
+                        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                            <div class="barner_text text-center">
+                                <h2>our storage location</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mainmenu_area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-9 col-lg-9">
+                            <div class="mainmenu nav">
+                                <nav>
+									<ul id="nav">
+											<li class="current"><a href="/ampackers/">Home</a>
+												</li>
+											<li><a href="/ampackers/about/">About Us</a></li>
+											<li><a href="/ampackers/services/">Service</a></li>
+											<li><a href="/ampackers/gallery/">Gallery</a></li>
+											<li><a href="/ampackers/contact/">Contact Us</a></li>
+											<li>
+												<form action="process.php" class="search-form">
+													<div class="form-group has-feedback">
+														<label for="search" class="sr-only">Search</label>
+														<input type="text" class="form-control" name="search" id="search" placeholder="search">
+														<span class="glyphicon glyphicon-search form-control-feedback"></span>
+													</div>
+												</form>
+											</li>                            
+										</ul>
+								</nav>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <div class="request_code">
+                                <input type="submit" value="GET A QUTE">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Slider Area-->
+        <!--Start Sercice Area -->
+        <section class="work_area section_padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-lg-4 col-sm-6">
+                        <div class="single_service">
+                            <a href="#"><img src="/static/ampackers-static/img/location/location_1.jpg" alt=""></a>
+                            <div class="location_title">
+                                <h4><a href="#">Sydney Storage Facilities</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-sm-6">
+                        <div class="single_service">
+                            <a href="#"><img src="/static/ampackers-static/img/location/location_2.jpg" alt=""></a>
+                            <div class="location_title">
+                                <h4><a href="#">Melbourne Storage Facilities</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-sm-6">
+                        <div class="single_service">
+                            <a href="#"><img src="/static/ampackers-static/img/location/location_3.jpg" alt=""></a>
+                            <div class="location_title">
+                                <h4><a href="#">Adelaide Storage Facilities</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-sm-6">
+                        <div class="single_service">
+                           <a href="#"> <img src="/static/ampackers-static/img/location/location_4.jpg" alt=""></a>
+                            <div class="location_title">
+                                <h4><a href="#">Brisbane Storage Facilities</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-sm-6">
+                        <div class="single_service">
+                            <a href="#"><img src="/static/ampackers-static/img/location/location_5.jpg" alt=""></a>
+                            <div class="location_title">
+                                <h4><a href="#">Canberra Storage Facilities</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-sm-6">
+                        <div class="single_service">
+                            <a href="#"><img src="/static/ampackers-static/img/location/location_6.jpg" alt=""></a>
+                            <div class="location_title">
+                                <h4><a href="#">Perth Storage Facilities</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Service Area-->
+        <!-- Newsletter Area -->
+        <section class="newsletter_area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-6">
+                       <div class="signup_newsletter">
+                           <p>singup for our</p>
+                           <h3>newsletter</h3>
+                           <form action="process.php">
+                               <input type="email" placeholder="e-mail address" required>
+                               <input type="submit" value="suscribe">
+                           </form>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+ 
+  {% endblock %}

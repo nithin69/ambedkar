@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+
+{% block title %} Kalamdreamhome - Contact Us  {% endblock %}
+
+{% block body_block %}
+
+        <!--Banner Wrap Start-->
+        <div class="kf_inr_banner">
+		
+            <div class="container">
+                <div class="row">
+				
+                    <div class="col-md-12">
+                    	<!--KF INR BANNER DES Wrap Start-->
+                        <div class="kf_inr_ban_des">
+                        	<div class="inr_banner_heading">
+							
+								<h3>Contact US</h3>
+                        	</div>
+                           
+                            <div class="kf_inr_breadcrumb">
+								<ul>
+									<li><a href="/">Home</a></li>
+									<li><a href="#">contact us</a></li>
+								</ul>
+							</div>
+                        </div>
+                        <!--KF INR BANNER DES Wrap End-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Banner Wrap End-->
+
+    	<!--Content Wrap Start-->
+    	<div class="kf_content_wrap">
+
+    		<section>
+    			<div class="container">
+    				<div class="row">
+    					<div class="contct_wrap">
+    						    {% if done %}
+        <p> Your Message has been forwaded to the respective authorities. Thank You</p>
+
+
+        {% else %}
+      
+            <!-- Display each form here -->
+
+
+  
+<form class="form-horizontal" id="contact_form" method="post" action="/contactus/"
+              enctype="multipart/form-data">
+                    {% csrf_token %}
+		    					<div class="col-md-8">
+		    						<div class="contact_heading">
+		    							<h4>Sent A Message</h4>
+		    						</div>
+		    						<div class="row">
+		    							<div class="col-md-6">
+		    								<div class="contact_des">
+		    									<div class="inputs_des">
+		    										<span><i class="fa fa-user"></i>Name</span>
+		    										<input id="id_name" name="name" type="text">
+		    									</div>
+
+		    									<div class="inputs_des">
+		    										<span><i class="fa fa-envelope-o"></i>E-mail</span>
+		    										<input id="id_email" name="email" type="text">
+		    									</div>
+
+		    									<div class="inputs_des">
+		    										<span><i class="fa fa-file-text-o"></i>Subject</span>
+		    										<input id="id_subject" name="subject" type="text">
+		    									</div>
+		    									<button type="submit">Submit</button>
+		    								</div>
+		    							</div>
+		    							<div class="col-md-6">
+		    								<div class="inputs_des">
+		    									<span><i class="fa fa-comments-o"></i>Comemnts</span>
+		    									<textarea id="id_comments" name="comments"></textarea>
+		    								</div>
+		    							</div>
+		    						{% endif %}
+                     
+                                </div>
+                        </div>
+            
+<br>
+		    					<div class="col-md-4">
+		    						<div class="contact_heading">
+		    							<h4>Contact info</h4>
+		    							
+		    						</div>
+		    						<ul class="contact_meta">
+										<li><i class="fa fa-home"></i># 46-15-11, 1st Floor, Dondaparthy Main Road, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Opp.TMC, Visakhapatnam -530016</li>
+										<li><i class="fa fa-mobile"></i><a href="#"> 8886957788, 8886567788</a></li>
+										<li><i class="fa fa-phone"></i><a href="#">0891-6057788 </a></li>
+										<li><i class="fa fa-envelope-o"></i><a href="#"> contact@kalamdreamhome.com</a></li>
+									</ul>
+									<div class="contact_heading social">
+		    							<h4>Get Social</h4>
+		    						</div>
+		    						<ul class="cont_socil_meta">
+										<li><a href="#"><i class="fa fa-envelope"></i></a></li>
+										<li><a href="https://www.facebook.com/hari.babu.12177?fref=ts" target="_blank"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+									</ul>
+		    					</div>
+		    				</form>
+	    				</div>
+    				</div>
+    			</div>
+    		</section>
+    	</div>
+        
+{% endblock %}	

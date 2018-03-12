@@ -1,0 +1,234 @@
+{% extends "base.html" %}
+
+{% block title %} Pisini Varaha - Our Leaders  {% endblock %}
+
+{% block body_block %}     
+    <section id="blogArchive">      
+      <div class="row">
+        <div class="col-lg-12 col-md-12">
+          <div class="blog-breadcrumbs-area">
+            <div class="container">
+              <div class="blog-breadcrumbs-left">
+                <h2>With Our Leaders</h2>
+              </div>
+              <div class="blog-breadcrumbs-right">
+                <ol class="breadcrumb">
+                  
+                  <li><a href="/">Home</a></li>                  
+                  <li class="active">With Our Leaders</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>        
+      </div>      
+    </section>
+    <!--=========== BEGAIN Doctors SECTION ================-->
+    <section id="meetDoctors">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12">
+            <div class="meetDoctors-area">
+             <!-- Start Service Title -->
+              <div class="section-heading">
+                <h2>With Our Leaders</h2>
+                <div class="line"></div>
+              </div>
+              <div class="doctors-area">
+                <ul class="doctors-nav">
+                  <li>
+                    <div class="single-doctor">
+                      <a class="tdoctor" href="/media/leaders/ntr1.jpg" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+                        <figure>
+                          <img src="/media/leaders/ntr1.jpg" />
+                          
+                          <figcaption>
+                            <h2>Nandamuri Taraka Rama Rao</h2>
+                            <p style="color:black">Former Chief Minister</p>
+                                      
+                          </figcaption>
+                        </figure>
+                      </a>
+                      <div class="single-doctor-social">
+                        <a href="#"><span class="fa fa-facebook"></span></a>
+                        <a href="#"><span class="fa fa-twitter"></span></a>
+                        <a href="#"><span class="fa fa-google-plus"></span></a>
+                        <a href="#"><span class="fa fa-linkedin"></span></a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="single-doctor">
+                      <div class="single-doctor">
+                      <a class="tdoctor" href="/media/leaders/NARA CHANDRABABU NAIDU1.jpg" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+                        <figure>
+                          <img src="/media/leaders/NARA CHANDRABABU NAIDU1.jpg" />
+                          
+                          <figcaption>
+                            <h2>Nara Chandra Babu Naidu</h2>
+                            <p>Cheif Minister</p>
+                                        
+                          </figcaption>
+                        </figure>
+                      </a>
+                      <div class="single-doctor-social">
+                        <a href="#"><span class="fa fa-facebook"></span></a>
+                        <a href="#"><span class="fa fa-twitter"></span></a>
+                        <a href="#"><span class="fa fa-google-plus"></span></a>
+                        <a href="#"><span class="fa fa-linkedin"></span></a>
+                      </div>
+                    </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="single-doctor">
+                      <div class="single-doctor">
+                      <a class="tdoctor" href="/media/leaders/Nara Lokesh1.jpg" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+                        <figure>
+                          <img src="/media/leaders/Nara Lokesh1.jpg" />
+                          
+                          <figcaption>
+                            <h2>Nara Lokesh</h2>
+                            <p>Leader</p>
+                                    
+                          </figcaption>
+                        </figure>
+                      </a>
+                      <div class="single-doctor-social">
+                        <a href="#"><span class="fa fa-facebook"></span></a>
+                        <a href="#"><span class="fa fa-twitter"></span></a>
+                        <a href="#"><span class="fa fa-google-plus"></span></a>
+                        <a href="#"><span class="fa fa-linkedin"></span></a>
+                      </div>
+                    </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="single-doctor">
+                      <div class="single-doctor">
+                      <a class="tdoctor" href="/media/leaders/GANTA SRINIVASA RAO1.jpg" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+                        <figure>
+                          <img src="/media/leaders/GANTA SRINIVASA RAO1.jpg" />
+                          
+                          <figcaption>
+                            <h2>GANTA SRINIVASA RAO</h2>
+                            <p>Education Minister</p>
+                                        
+                          </figcaption>
+                        </figure>
+                      </a>
+                      <div class="single-doctor-social">
+                        <a href="#"><span class="fa fa-facebook"></span></a>
+                        <a href="#"><span class="fa fa-twitter"></span></a>
+                        <a href="#"><span class="fa fa-google-plus"></span></a>
+                        <a href="#"><span class="fa fa-linkedin"></span></a>
+                      </div>
+                    </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+	      <div class="doctors-area">
+                <ul class="doctors-nav">
+                  <li>
+                    <div class="single-doctor">
+                      <a class="tdoctor" href="/media/leaders/GANESH KUMAR VASUPALLI(MLA).jpg" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+                        <figure>
+                          <img src="/media/leaders/GANESH KUMAR VASUPALLI(MLA).jpg" />
+                          
+                          <figcaption>
+                            <h2>GANESH KUMAR VASUPALLI(MLA).jpg</h2>
+                            <p>MLA - Visakhapatnam South</p>
+                                        
+                          </figcaption>
+                        </figure>
+                      </a>
+                      <div class="single-doctor-social">
+                        <a href="#"><span class="fa fa-facebook"></span></a>
+                        <a href="#"><span class="fa fa-twitter"></span></a>
+                        <a href="#"><span class="fa fa-google-plus"></span></a>
+                        <a href="#"><span class="fa fa-linkedin"></span></a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="single-doctor">
+                      <div class="single-doctor">
+                      <a class="tdoctor" href="/media/leaders/GANA VENKATA REDDY NAIDU PETHAKAMSETTI(MLA).jpg" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+                        <figure>
+                          <img src="/media/leaders/GANA VENKATA REDDY NAIDU PETHAKAMSETTI(MLA).jpg" />
+                          
+                          <figcaption>
+                            <h2>GANA VENKATA REDDY NAIDU PETHAKAMSETTI</h2>
+                            <p>MLA Visakhapatnam West</p>
+                                       
+                          </figcaption>
+                        </figure>
+                      </a>
+                      <div class="single-doctor-social">
+                        <a href="#"><span class="fa fa-facebook"></span></a>
+                        <a href="#"><span class="fa fa-twitter"></span></a>
+                        <a href="#"><span class="fa fa-google-plus"></span></a>
+                        <a href="#"><span class="fa fa-linkedin"></span></a>
+                      </div>
+                    </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="single-doctor">
+                      <div class="single-doctor">
+                      <a class="tdoctor" href="/media/leaders/RAMAKRISHNA BABU VELAGAPUDI1.jpg" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+                        <figure>
+                          <img src="/media/leaders/RAMAKRISHNA BABU VELAGAPUDI1.jpg" />
+                          
+                          <figcaption>
+                            <h2>RAMAKRISHNA BABU VELAGAPUDI</h2>
+                            <p>MLA Visakhapatnam East</p>
+                                        
+                          </figcaption>
+                        </figure>
+                      </a>
+                      <div class="single-doctor-social">
+                        <a href="#"><span class="fa fa-facebook"></span></a>
+                        <a href="#"><span class="fa fa-twitter"></span></a>
+                        <a href="#"><span class="fa fa-google-plus"></span></a>
+                        <a href="#"><span class="fa fa-linkedin"></span></a>
+                      </div>
+                    </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="single-doctor">
+                      <div class="single-doctor">
+                      <a class="tdoctor" href="/media/leaders/PALLA SRINIAVASA RAO(MLA).jpg" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+                        <figure>
+                          <img src="/media/leaders/PALLA SRINIAVASA RAO(MLA).jpg" />
+                          
+                          <figcaption>
+                            <h2>PALLA SRINIAVASA RAO</h2>
+                            <p>MLA Gajuwaka</p>
+                                       
+                          </figcaption>
+                        </figure>
+                      </a>
+                      <div class="single-doctor-social">
+                        <a href="#"><span class="fa fa-facebook"></span></a>
+                        <a href="#"><span class="fa fa-twitter"></span></a>
+                        <a href="#"><span class="fa fa-google-plus"></span></a>
+                        <a href="#"><span class="fa fa-linkedin"></span></a>
+                      </div>
+                    </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--=========== End Doctors SECTION ================-->
+
+    <!--=========== BEGAIN Counter SECTION ================-->
+    
+{% endblock %}

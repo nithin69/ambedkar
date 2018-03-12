@@ -1,0 +1,78 @@
+
+{% extends "base.html" %}
+
+{% block title %}My Maths{% endblock %}
+
+{% block content %}
+     
+    <!-- ******CONTENT****** --> 
+        <div class="content container">
+            <div class="page-wrapper">
+                <header class="page-heading clearfix">
+                    <h1 class="heading-title pull-left">Library</h1>
+                    <div class="breadcrumbs pull-right">
+                        <ul class="breadcrumbs-list">
+                            <li class="breadcrumbs-label">You are here:</li>
+                            <li><a href="/">Home</a><i class="fa fa-angle-right"></i></li>
+                            <li class="current">Library</li>
+                        </ul>
+                    </div><!--//breadcrumbs-->
+                </header> 
+				
+                <div class="page-content">
+                    <div class="row page-row">
+                        <div class="col-sm-8 col-sm-offset-2">
+					<form class="search-form" role="search"  action="/search2">
+                        <div class="form-group">
+						    <input name = "r" type="text" class="form-control" placeholder="Search book..." style="padding-right: 300px;">
+							<button type="submit" class="btn btn-theme">Go</button>
+						</div>
+						
+                    </form>   
+                         
+                                                                           
+                        </div><!--//faq-wrapper-->
+                      
+                    </div><!--//page-row-->
+                </div><!--//page-content-->
+				
+				
+				
+				<div class="page-content">
+                    <div class="row page-row">
+                        <div class="col-sm-10 col-sm-offset-1">
+						{% for l in library %}
+							<div class="col-md-3 col-sm-3 col-xs-12 text-center">
+							<img class="img-responsive" src="/media/{{ l.cover }}" alt="" style="width:358px; height:239px" />
+                            <div class="album-cover">
+								<p> <b>Author : </b> {{l.author}} </p>
+								{% if l.status == True %}
+								<p style="color:red"> <b>Status : </b> Issued </p>
+								{% else %}
+								<p style="color:green"> <b>Status : </b> NotIssued	</p>
+								{% endif %}
+								<div class="details">
+                                    <h2 class="title">{{l.book}}</h2>
+                                    <p class="time"><i><b> Issued On </b></i>{{l.form_date}}</p>
+                                    <p class="location"><i><b> Issued upto </b></i>{{l.to_date}}</p>
+									<p class="location"><i><b> Issued To </b></i>{{l.issued}}</p>
+									<p class="location"><i><b> Phone </b></i>{{l.phone}}</p>
+									
+                                </div><!--//details-->
+							  
+                            </div>
+                        </div>
+						{% endfor %}	
+                                                                           
+                        </div><!--//faq-wrapper-->
+                      
+                    </div><!--//page-row-->
+                </div><!--//page-content-->
+				
+				
+				
+            </div><!--//page--> 
+        </div><!--//content-->
+    </div><!--//wrapper-->
+
+{% endblock %}

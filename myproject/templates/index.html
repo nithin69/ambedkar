@@ -1,0 +1,224 @@
+
+{% extends "base.html" %}
+
+{% block title %}Ambedkar{% endblock %}
+
+{% block content %}
+
+        
+        <!-- ******CONTENT****** --> 
+		
+		<div>
+		 <font color="WHITE"><marquee scrollamount="5" direction="left" style="background:grey">{{marquee.content}}</marquee></font>
+		  
+		</div>
+        <div class="content container">
+		
+ 
+            <div id="promo-slider" class="slider flexslider">
+                 <ul class="slides">
+				 {% for c in Carosuel %}
+                    <li>
+                        <img src="media/{{c.image }}" style="width:1140px; height:350px" alt="" />
+                       
+                    </li>
+				 {% endfor %}	
+					                   
+                </ul><!--//slides-->
+            </div><!--//flexslider-->
+           
+            <section class="news">
+                <h1 class="section-heading text-highlight"><span class="line">Latest News</span></h1>     
+                <div class="carousel-controls">
+				<blockquote class="quote">
+                    <a class="prev" href="#news-carousel" data-slide="prev"><i class="fa fa-caret-left"></i></a>
+                    <a class="next" href="#news-carousel" data-slide="next"><i class="fa fa-caret-right"></i></a>
+					</blockquote>
+                </div><!--//carousel-controls--> 
+                <div class="section-content clearfix">
+                    <div id="news-carousel" class="news-carousel carousel slide">
+					
+                        <div class="carousel-inner">
+                            <div class="item active"> 
+						
+								{% for n in news|slice:":3" %}
+						
+                                <div class="col-md-4 news-item">
+                                    <h2 class="title"><a href="news-single.html">{{n.title}}</a></h2>
+                                    <img class="thumb" style="width:100px; height:100px" src="media/{{ n.image }}"   alt="" />
+                                    <p>{{n.description | slice:":80"}}</p>
+                                    <a class="read-more" href="#">Read more<i class="fa fa-chevron-right"></i></a>                
+                                </div><!--//news-item-->
+								
+							{% endfor %}
+							</div><!--//item-->
+                        </div><!--//carousel-inner-->
+						<button  align="right" value="All Latest News"><a class="read-more" href="/news/">All Latest News<i class="fa fa-chevron-right"></i></a></button>
+                            
+                    </div><!--//news-carousel-->  
+                </div><!--//section-content-->     
+            </section><!--//news-->
+            <div class="row cols-wrapper">
+                <div class="col-md-3">
+                    <section class="events">
+
+                        <h1 class="section-heading text-highlight"><span class="line">Events</span></h1>
+                        <div class="section-content">
+						{% for e in Events|slice:":4" %}
+						
+                            <div class="event-item">
+                                <p class="date-label">
+                                    <span class="month">{{e.month}}</span>
+                                    <span class="date-number">{{e.date}}</span>
+                                </p>
+                                <div class="details">
+                                    <h2 class="title">{{e.title}}</h2>
+                                    <p class="time"><i class="fa fa-clock-o"></i>{{e.time}}</p>
+                                    <p class="location"><i class="fa fa-map-marker"></i>{{e.location}}</p>                            
+                                </div><!--//details-->
+                            </div><!--event-item-->  
+							
+						{% endfor %}	
+                            
+                            <a class="read-more" href="/events/">All events<i class="fa fa-chevron-right"></i></a>
+                        </div><!--//section-content-->
+                    </section><!--//events-->
+                </div><!--//col-md-3-->
+                <div class="col-md-6">
+                    <section class="course-finder">
+                        <h1 class="section-heading text-highlight"><span class="line">Books</span></h1>
+                        <div class="section-content">
+                        <!--    <form class="course-finder-form" action="#" method="get">
+                                <div class="row">
+                                    <div class="col-md-5 col-sm-5 subject">
+                                        <select class="form-control subject">
+                                            <option>Choose a subject area</option>
+                                            <option>Social Equality</option>
+                                            <option>Social Justice</option>
+                                            <option>Women Ampowerment</option>
+                                            <option>Literature</option>
+                                            <option>Equality</option>
+                                            <option>Social Equality</option>
+                                            <option>Social Justice</option>
+                                            <option>Women Ampowerment</option>
+                                            <option>Literature</option>
+                                            <option>Equality</option>
+                                            <option>Social Equality</option>
+                                            <option>Social Justice</option>
+                                            <option>Women Ampowerment</option>
+                                            <option>Literature</option>
+                                            <option>Equality</option>
+                                           
+                                        </select>
+                                    </div> 
+                                    <div class="col-md-7 col-sm-7 keywords">
+                                        <input class="form-control pull-left" type="text" placeholder="Search keywords" />
+                                        <button type="submit" class="btn btn-theme"><i class="fa fa-search"></i></button>
+                                    </div> 
+                                </div>                     
+                            </form>--><!--//course-finder-form-->
+                            
+                        </div><!--//section-content-->
+                    </section><!--//course-finder-->
+                    <section class="video">
+                        <h1 class="section-heading text-highlight"><span class="line">Video Tour</span></h1>
+                        <div class="carousel-controls">
+                            <a class="prev" href="#videos-carousel" data-slide="prev"><i class="fa fa-caret-left"></i></a>
+                            <a class="next" href="#videos-carousel" data-slide="next"><i class="fa fa-caret-right"></i></a>
+                        </div><!--//carousel-controls-->
+                        <div class="section-content">    
+                           <div id="videos-carousel" class="videos-carousel carousel slide">
+                                <div class="carousel-inner">
+								{% for y in Youtube %}
+                                    <div class="item active">            
+                                        <iframe class="video-iframe" src="{{y.video}}" frameborder="0" allowfullscreen=""></iframe>
+                                    </div><!--//item-->
+                                {% endfor %} 
+                                </div><!--//carousel-inner-->
+								
+							  	
+                           </div><!--//videos-carousel-->                            
+                            </div><!--//section-content-->
+                    </section><!--//video-->
+                </div>
+                <div class="col-md-3">
+                    <section class="links">
+                        <h1 class="section-heading text-highlight"><span class="line">Quick Links</span></h1>
+                        <div class="section-content">
+                            <p><a href="/activites/"><i class="fa fa-caret-right"></i>Activities</a></p>
+                            <p><a href="/scolarship/"><i class="fa fa-caret-right"></i>Scholarships</a></p>
+                            <p><a href="/jobs/"><i class="fa fa-caret-right"></i>Job Vacancies</a></p>
+                            <p><a href="/contact/"><i class="fa fa-caret-right"></i>Contact</a></p>
+                        </div><!--//section-content-->
+                    </section><!--//links-->
+                    <section class="testimonials">
+                        <h1 class="section-heading text-highlight"><span class="line"> Testimonials</span></h1>
+                        <div class="carousel-controls">
+                            <a class="prev" href="#testimonials-carousel" data-slide="prev"><i class="fa fa-caret-left"></i></a>
+                            <a class="next" href="#testimonials-carousel" data-slide="next"><i class="fa fa-caret-right"></i></a>
+                        </div><!--//carousel-controls-->
+                        <div class="section-content">
+                            <div id="testimonials-carousel" class="testimonials-carousel carousel slide">
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <blockquote class="quote">                                  
+                                            <p><i class="fa fa-quote-left"></i>I’m very happy interdum eget ipsum. Nunc pulvinar ut nulla eget sollicitudin. In hac habitasse platea dictumst. Integer mattis varius ipsum, posuere posuere est porta vel. Integer metus ligula, blandit ut fermentum a, rhoncus in ligula. Duis luctus.</p>
+                                        </blockquote>                
+                                        <div class="row">
+                                            <p class="people col-md-8 col-sm-3 col-xs-8"><span class="name">Marissa Spencer</span><br /><span class="title">Curabitur commodo</span></p>
+                                            <img class="profile col-md-4 pull-right" src="/static/amsstatic/assets/images/testimonials/profile-1.png"  alt="" />
+                                        </div>                               
+                                    </div><!--//item-->
+                                    <div class="item">
+                                        <blockquote class="quote">
+                                            <p><i class="fa fa-quote-left"></i>
+                                            I'm very pleased commodo gravida ultrices. Sed massa leo, aliquet non velit eu, volutpat vulputate odio. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse porttitor metus eros, ut fringilla nulla auctor a.</p>
+                                        </blockquote>
+                                        <div class="row">
+                                            <p class="people col-md-8 col-sm-3 col-xs-8"><span class="name">Marco Antonio</span><br /><span class="title"> Gravida ultrices</span></p>
+                                            <img class="profile col-md-4 pull-right" src="/static/amsstatic/assets/images/testimonials/profile-2.png"  alt="" />
+                                        </div>                 
+                                    </div><!--//item-->
+                                    <div class="item">
+                                        <blockquote class="quote">
+                                            <p><i class="fa fa-quote-left"></i>
+                                            I'm delighted commodo gravida ultrices. Sed massa leo, aliquet non velit eu, volutpat vulputate odio. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse porttitor metus eros, ut fringilla nulla auctor a.</p>
+                                        </blockquote>
+                                        <div class="row">
+                                            <p class="people col-md-8 col-sm-3 col-xs-8"><span class="name">Kate White</span><br /><span class="title"> Gravida ultrices</span></p>
+                                            <img class="profile col-md-4 pull-right" src="/static/amsstatic/assets/images/testimonials/profile-3.png"  alt="" />
+                                        </div>                 
+                                    </div><!--//item-->
+                                    
+                                </div><!--//carousel-inner-->
+                            </div><!--//testimonials-carousel-->
+                        </div><!--//section-content-->
+                    </section><!--//testimonials-->
+                </div><!--//col-md-3-->
+            </div><!--//cols-wrapper-->
+            <section class="awards">
+                <div id="awards-carousel" class="awards-carousel carousel slide">
+                    <div class="carousel-inner">
+                        <div class="item active">
+                           
+                        </div><!--//item-->
+                        
+                        <div class="item">
+                          
+                        </div><!--//item-->
+                    </div><!--//carousel-inner-->
+                    <a class="left carousel-control" href="#awards-carousel" data-slide="prev">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a class="right carousel-control" href="#awards-carousel" data-slide="next">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+        
+                </div>
+            </section>
+        </div><!--//content-->
+    </div><!--//wrapper-->
+	
+ 	
+	
+{% endblock %}

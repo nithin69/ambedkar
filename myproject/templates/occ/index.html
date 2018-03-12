@@ -1,0 +1,201 @@
+
+{% extends "occ/base.html" %}
+
+{% block title %}SHABBAR MUSTAFA TRADING COMPANY{% endblock %}
+
+{% block body_block %}
+	<div class="baner">
+		<div class="container">
+			<div class="baner-grids">
+				<div class="col-md-6 baner-top">
+					<figure class="effect-bubba">
+						<img src="/static/occ-static/images/img1.jpg" alt=""/>
+						<figcaption>
+							<h4>Fresh Vegetables</h4>
+							<p>Vegetables trading Website</p>	
+						</figcaption>			
+					</figure>	
+				</div>
+				<div class="col-md-6 baner-top">
+					<figure class="effect-bubba">
+						<img src="/static/occ-static/images/img2.jpg" alt=""/>
+						<figcaption>
+							<h4>Fresh Vegetables</h4>
+							<p>Vegetables trading Website</p>	
+						</figcaption>			
+					</figure>	
+				</div>
+				<div class="clearfix"> </div>
+				<div class="baner-row">
+					<div class="col-md-4 baner-bottom">
+						<figure class="effect-bubba">
+							<img src="/static/occ-static/images/img3.jpg" alt=""/>
+							<figcaption>
+								<h4>Fresh Vegetables</h4>
+								<p>Vegetables trading Website</p>	
+							</figcaption>			
+						</figure>	
+					</div>
+					<div class="col-md-4 baner-bottom">
+						<figure class="effect-bubba">
+							<img src="/static/occ-static/images/img4.jpg" alt=""/>
+							<figcaption>
+								<h4>Fresh Vegetables</h4>
+								<p>Vegetables trading Website</p>	
+							</figcaption>			
+						</figure>	
+					</div>
+					<div class="col-md-4 baner-bottom">
+						<figure class="effect-bubba">
+							<img src="/static/occ-static/images/img5.jpg" alt=""/>
+							<figcaption>
+								<h4>Fresh Vegetables</h4>
+								<p>Vegetables trading Website</p>	
+							</figcaption>			
+						</figure>	
+					</div>
+					<div class="clearfix"> </div>
+				</div>				
+			</div>
+		</div>
+	</div>
+	<!--//baner-->
+	<!---728x90--->
+
+        <!--- price list --->
+
+        <div class="services" id="services">
+                <div class="container">
+                        <h3 class="title">Todays Price List</h3>
+                        <div class="service-grids">
+                                {% for r in Rate %}
+                                <div class="col-md-4 srvc-grids-info">
+                                       <b> Product Name  </b> : {{r.product_name}}
+                               	</div>
+                                <div class="col-md-4 srvc-grids-info">
+                                       <b> Day </b> : {{r.day}}
+                                </div>
+                                <div class="col-md-4 srvc-grids-info">
+                                       <b> Rate </b> : {{r.rate}}
+                                </div>
+                                        {% endfor %}
+                                <div class="clearfix"> </div>
+
+			</div>
+		</div>
+	</div>
+
+
+        <!--- // Price list --->
+
+
+
+	<!-- news -->
+	<div class="news-info">
+		<div class="container">		
+			<h3 class="title">Our News</h3>
+		</div>
+	</div>
+	<!-- container -->
+	<div class="container">				
+		<div class="news">	
+			<div class="news-grids">
+				<div class="col-md-4 news-grid">
+					<div class="news-grid-left news-grid-left-img">
+						<!-- <h6>23rd /july</h6>  -->
+					</div>
+					<div class="news-grid-left-info">
+						<h5>Lorem Ipsum is simply dummy</h5>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					</div>
+				</div>
+				<div class="col-md-4 news-grid">
+					<div class="news-grid-left news-grid-middle">
+						<!-- <h6>5th /Aug</h6> -->
+					</div>
+					<div class="news-grid-left-info">
+						<h5>Lorem Ipsum is simply dummy</h5>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					</div>
+				</div>
+				<div class="col-md-4 news-grid">
+					<div class="news-grid-left news-grid-right">
+						<!-- <h6>15th /Aug</h6> -->
+					</div>
+					<div class="news-grid-left-info">
+						<h5>Lorem Ipsum is simply dummy</h5>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div><!-- //container -->	
+	</div>
+	<!-- //news -->
+	<!---728x90--->
+	<!--main-->
+	<div class="main">
+		<div class="container">
+			<div class="main-grids">
+				<div class="col-md-6 main-left">
+					<img src="/static/occ-static/images/img6.jpg" alt=""/>
+					<h4>ECO SOLUTIONS</h4>
+					<p>Temporibus autem quibusdam et aut officiis debitis aut
+						rerum necessitatibus saepe eveniet ut et voluptates repudiandae.</p>
+					<a href="#" class="more btn btn-1 btn-1b"> Read More</a>
+				</div>
+				<div class="col-md-6 main-right">
+					<div class="col-md-6 main-text">
+						<img src="/static/occ-static/images/img7.jpg" alt=""/>
+					</div>
+					<div class="col-md-6 main-text">
+						<h4>ECO SOLUTIONS</h4>			
+						<p>Temporibus autem quibusdam et aut officiis debitis aut eveniet ut et voluptates repudiandae rerum necessitatibus saepe quibusdam et aut officiis debitis aut
+							rerum necessitatibus saepe eveniet ut et voluptates repudiandae </p>
+						<a href="#" class="more btn btn-1 btn-1b"> Read More</a>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>			
+		</div>
+	</div>
+	<!--//main-->
+	<!---728x90--->
+
+	<!--services-->
+	<div class="services" id="services">
+		<div class="container">
+			<h3 class="title">Services Overview</h3>
+			<div class="service-grids">
+				<div class="col-md-4 srvc-grids-info">
+					<div class="srvc-img">
+						<span class="glyphicon glyphicon-leaf" aria-hidden="true"></span>
+					</div>
+					<h5>Fresh Vegetables</h5>
+					<p>Claritas est etiam processus dynaicus qui Mirum est notare quam </p>
+				</div>
+				<div class="col-md-4 srvc-grids-info">
+					<div class="srvc-img">
+						<span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+					</div>
+					<h5>24/7 Support</h5>
+					<p>Claritas est etiam processus dynaicus qui Mirum est notare quam </p>
+				</div>
+				<div class="col-md-4 srvc-grids-info">
+					<div class="srvc-img">
+						<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+					</div>
+					<h5>Licensed & Insured</h5>
+					<p>Claritas est etiam processus dynaicus qui Mirum est notare quam </p>
+				</div>
+				
+				<div class="clearfix"> </div>				
+			</div>
+		</div>
+	</div>
+	<!--//services-->
+
+	<!-- footer -->
+	
+{% endblock %}

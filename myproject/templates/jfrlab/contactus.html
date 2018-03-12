@@ -1,0 +1,82 @@
+{% extends "jfrlab/base.html" %}
+
+{% block title %} J F Research Lab  {% endblock %}
+
+{% block body_block %}
+			<br>
+			<br>
+
+
+<div class="container">
+
+				<div class="row">
+
+					<main id="main" class="site-main col-md-12">
+
+						<div class="row">
+
+							<div class="col-md-6">
+
+								<div class="contact-form">
+								
+									<h3 class="title">Contact Form</h3>
+
+									{% if done %}
+        <p> Your Message has been forwaded to the respective authorities. Thank You</p>
+
+
+        {% else %}
+
+									<form id="contact_form" method="post" action="/jfr/contactus/" enctype="multipart/form-data">
+	{% csrf_token %}
+
+										<input class="input-text" id="id_name" name="name" type="text" placeholder="Your Name *">
+
+										<input class="input-text" id="id_email" name="email" type="email" placeholder="Your Email *">
+
+										<input class="input-text" id="id_subject" name="subject" type="text" placeholder="Subject *">
+
+										<textarea id="id_message" name="message" type="message" placeholder="Your Message *"></textarea>
+
+										
+
+										<input class="button primary rounded" type="submit" value="Send Email">
+
+									</form>
+
+{% endif %}
+
+								</div><!-- .contact-form -->
+
+							</div>
+
+
+
+							<div class="col-md-6">
+
+								<div class="contact-info">
+
+									<div id="map"><div style="width: 100%"><iframe width="100%" height="265" src="http://www.mapi.ie/create-google-map/map.php?width=100%&amp;height=500&amp;hl=en&amp;q=rasa%20road%2C%20Gnanapuram%2C%20Visakhapatnam%2C%20Andhra%20Pradesh%2C%20India+(Joseph's%20Fundamental%20Research%20Lab)&amp;ie=UTF8&amp;t=&amp;z=18&amp;iwloc=A&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="http://www.mapsdirections.info/pl/stworz-mape-google/"></a>  <a href="http://www.mapsdirections.info/pl/"></a></iframe></div><br /></div>
+
+
+
+									<h3 class="title">Contact Infomation</h3>
+
+									<p>Address: Agrapu Joseph<br>34-3-60/5<br>Gnanapuram<br>Visakhapatnam</p>
+
+									
+									<p>Email: <a href="mailto:contact@jfrlab.com">contact@jfrlab.com</a></p>
+
+								</div><!-- .contact-info -->
+
+							</div>
+
+						</div>						
+
+					</main><!-- .site-main -->
+
+				</div><!-- .row -->
+
+			</div><!-- .container -->
+			
+	{% endblock %} 

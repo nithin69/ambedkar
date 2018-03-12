@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+
+{% block title %} Pisini Varaha - Schemes {% endblock %}
+
+{% block body_block %}     
+    <section id="blogArchive">      
+      <div class="row">
+        <div class="col-lg-12 col-md-12">
+          <div class="blog-breadcrumbs-area">
+            <div class="container">
+              <div class="blog-breadcrumbs-left">
+                <h3>Schemes</h3>
+              </div>
+              <div class="blog-breadcrumbs-right">
+                <ol class="breadcrumb">
+                  
+                  <li><a href="/">Home</a></li>                  
+                  <li class="active">Schemes</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>        
+      </div>      
+    </section>
+    
+ <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+          <a href="https://appointments.uidai.gov.in/">  <img src="/media/gallery/aadhaar1.jpg"
+            class="img-responsive"></a>
+            <h3>Aadhaar Card Apply</h3>
+          </div>
+          <div class="col-md-4">
+            <a href="http://eci.nic.in/eci/eci.html"> <img src="/media/gallery/aadhaar.jpg"
+            class="img-responsive"></a>
+            <h3>Voter Id Card Apply</h3>
+          </div>
+          <div class="col-md-4">
+            <a href="http://mylpg.in/" target="_blank"><img src="/media/gallery/lpg1.jpg"
+            class="img-responsive"></a>
+            <h3>Gas Aadhar Link up</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <a href="http://wcdsc.ap.nic.in/" target="_blank"><img src="/media/gallery/girl1.jpg"
+            class="img-responsive"></a>
+            <h3>Child & Women</h3>
+          </div>
+          <div class="col-md-4">
+            <a href="http://bangarutalli.ap.gov.in/" target="_blank"><img src="/media/gallery/bangaru.jpg"
+            class="img-responsive"></a>
+            <h3>Bangaru Thalli scheme</h3>
+          </div>
+          <div class="col-md-4">
+            <img src=""
+            class="img-responsive">
+            <h3>A title</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  
+   
+    
+{% endblock %}

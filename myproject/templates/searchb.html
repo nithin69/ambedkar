@@ -1,0 +1,86 @@
+
+{% extends "base.html" %}
+
+{% block title %}My Maths{% endblock %}
+
+{% block content %}
+     
+    <!-- ******CONTENT****** --> 
+        <div class="content container">
+            <div class="page-wrapper">
+                <header class="page-heading clearfix">
+                    <h1 class="heading-title pull-left">Library</h1>
+                    <div class="breadcrumbs pull-right">
+                        <ul class="breadcrumbs-list">
+                            <li class="breadcrumbs-label">You are here:</li>
+                            <li><a href="/">Home</a><i class="fa fa-angle-right"></i></li>
+                            <li class="current">Library</li>
+                        </ul>
+                    </div><!--//breadcrumbs-->
+                </header> 
+							{% if search  %}
+	<h3> <b> Search of {{ category }} </b> </h3>
+
+                <div class="page-content">
+                    <div class="row page-row">
+                        <div class="col-sm-8 col-sm-offset-2">
+					<form class="search-form" role="search">
+                        <div class="form-group">
+						<table><tr>
+                            <td><input type="text" class="form-control" placeholder="Search book..." action="/search2" style="padding-right: 300px;"></td>
+							<td><button type="submit" class="btn btn-theme">Go</button></td></tr></table>
+						</div>
+						
+                    </form>   
+                         
+                                                                           
+                        </div><!--//faq-wrapper-->
+                      
+                    </div><!--//page-row-->
+                </div><!--//page-content-->
+				
+					
+						{% else %}
+                    
+    <h2> No results for keyword : {{ category }}  </h2>
+            {% endif %}
+			
+				
+				<div class="page-content">
+                    <div class="row page-row">
+                        <div class="col-sm-10 col-sm-offset-1">
+						{% for s in search2 %}
+							<div class="col-md-3 col-sm-3 col-xs-12 text-center">
+							<img class="img-responsive" src="media/{{ s.image }}" alt="" style="width:358px; height:239px" />
+                            <div class="album-cover">
+								<p> <b>Author : </b> {{s.author}} </p>
+								{% if l.status == True %}
+								<p style="color:red"> <b>Status : </b> Issued </p>
+								{% else %}
+								<p style="color:green"> <b>Status : </b> NotIssued	</p>
+								{% endif %}
+								<div class="details">
+                                    <h2 class="title">{{s.book}}</h2>
+                                    <p class="time"><i><b> Issued On </b></i>{{s.form_date}}</p>
+                                    <p class="location"><i><b> Issued upto </b></i>{{s.to_date}}</p>
+									<p class="location"><i><b> Issued To </b></i>{{s.issued}}</p>
+									<p class="location"><i><b> Phone </b></i>{{s.phone}}</p>
+									
+                                </div><!--//details-->
+							  
+                            </div>
+                        </div>
+						{% endfor %}	
+                                                                           
+                        </div><!--//faq-wrapper-->
+                      
+                    </div><!--//page-row-->
+                </div><!--//page-content-->
+				
+				
+				
+            </div><!--//page--> 
+        </div><!--//content-->
+    </div><!--//wrapper-->
+
+{% endblock %}

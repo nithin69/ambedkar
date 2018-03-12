@@ -1,0 +1,48 @@
+
+{% extends "base.html" %}
+
+{% block title %}My Maths{% endblock %}
+
+{% block content %}
+     
+    <!-- ******CONTENT****** --> 
+        <div class="content container">
+            <div class="page-wrapper">
+                <header class="page-heading clearfix">
+                    <h1 class="heading-title pull-left">sms</h1>
+                    <div class="breadcrumbs pull-right">
+                        <ul class="breadcrumbs-list">
+                            <li class="breadcrumbs-label">You are here:</li>
+                            <li><a href="/">Home</a><i class="fa fa-angle-right"></i></li>
+                            <li class="current">sms</li>
+                        </ul>
+                    </div><!--//breadcrumbs-->
+                </header> 
+				
+				
+                <div class="page-content">
+                    <div class="row page-row">
+                        <div class="col-sm-8 col-sm-offset-2">
+					<form class="search-form" action="/sms/" method="GET">
+					{% csrf_token %}
+                        <div class="form-group">
+						    <input name = "message" type="text" class="form-control" placeholder="Enter message" style="padding-right: 300px;">
+							<button type="submit" class="btn btn-theme">Go</button>
+						</div>
+						
+                    </form>   
+                         
+                                                                           
+                        </div><!--//faq-wrapper-->
+                      
+                    </div><!--//page-row-->
+                </div><!--//page-content-->
+				
+				</div>
+				</div>
+				
+				
+				
+<!--//wrapper-->
+
+{% endblock %}

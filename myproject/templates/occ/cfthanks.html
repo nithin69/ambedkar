@@ -1,0 +1,44 @@
+{% extends "occ/base.html" %}
+
+{% block title %}SHABBAR MUSTAFA TRADING COMPANY{% endblock %}
+
+{% block body_block %}
+	<!--baner-->
+	<div class="baner about-bnr">
+		<div class="container">
+			<div class="baner-grids">
+				<div class="col-md-12">
+
+                            <h3> Thank You for contacting Saiyad Bilal. We will get get back to you soon.
+
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!--//baner-->
+	<!---728x90--->
+	<!--about-->
+	<!--smooth-scrolling-of-move-up-->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+			};
+			*/
+			
+			$().UItoTop({ easingType: 'easeOutQuart' });
+			
+		});
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	<!--//smooth-scrolling-of-move-up-->
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.js"></script>
+{% endblock %}

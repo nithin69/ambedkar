@@ -1,0 +1,133 @@
+{% extends "ndt/base.html" %}
+
+{% block title %} National ndt  {% endblock %}
+
+{% block body_block %}
+ 
+<main class="main">
+ 
+<div class="page-title text-center">
+<h2 class="title"> Contact us </h2>
+</div>
+ 
+ 
+<div class="breadcrumbs">
+<div class="container">
+<span class="parent"> <i class="fa fa-home"></i> <a href="/ndt/"> Home </a> </span>
+<i class="fa fa-chevron-right"></i>
+<span class="child"> Contact </span>
+</div>
+</div>
+<br>
+<div class="container">
+<section class="contact">
+<div class="row contact-centers">
+<div class="col-md-4">
+<div class="contact-area-box">
+<h4 class="contact-title subtitle">M/s NATIONAL NDT SERVICES</h4>
+<div class="address">
+<i class="fa fa-map-marker" aria-hidden="true"></i>
+<p>
+Autonagar “B” Block , B-19/1, <br>1st Floor Near Canara Bank,<br> Behind LIC Office,
+<br> Autonagar Industrial Estate,
+<br>Visakhapatanam – 12.
+<br>Andhrapradesh (INDIA).
+
+</p>
+</div>
+<div class="phone">
+<i class="fa fa-phone" aria-hidden="true"></i>
+<p><p>0891 270 3456<br>
++91 7306 55 7306<br></p>
+</div><br>
+<div class="email">
+<i class="fa fa-envelope" aria-hidden="true"></i>
+<p>
+info@nationalndt-india.com<br>
+training@nationalndt-india.com</p><br><br><br>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="contact-area-box">
+<img src="/static/ndt-static/images/founder.png" alt="CEO"/><br><br>
+</div>
+</div>
+<div class="col-md-4">
+<div class="contact-area-box">
+<h4 class="ceo-subtitle subtitle">VUDDAVOLU SATYANARAYANA(Proprietor)</h4>
+<div class="address">
+
+<p>Radiological Safety Officer ( BARC Level – II , INDIA)
+<br> CSWIP 3.1 Certified Welding Inspector (TWI,UK)
+<br>Certified IRCA 9001:2015 Lead Auditor (IRCA,UK)
+<br> Certified Radiographer (BARC Level – I, INDIA)
+<br> ASNT Level – II ( RT,UT,PT.MPT & VT)
+</p>
+</div>
+<div class="phone">
+<i class="fa fa-phone" aria-hidden="true"></i>
+<p>Mobile : +91 8686 74 8989</p>
+</div>
+<div class="email">
+<i class="fa fa-envelope" aria-hidden="true"></i>
+<p>ceo@nationalndt-india.com
+
+</div>
+</div>
+</div>
+</div>
+</section>
+
+ 
+<div class="container">
+<section class="contact">
+<div class="row contact-centers">
+
+
+
+
+<div class="col-md-6">
+<h2 class="title-2"> Send us a message </h2>
+<form id="contact_form" class="form well-form" action="php/contact.php.htm" method="post">
+ 
+<div class="form-group">
+<input name="name" placeholder="Full Name" class="form-control" type="text" required title="Please enter your full name">
+</div>
+ 
+<div class="form-group">
+<input name="email" placeholder="Email Address" class="form-control" type="email" required title="Please enter your email address" data-msg-email="Ouch, that doesn't look like an email">
+</div>
+ 
+<div class="form-group">
+<input name="phone" placeholder="Phone Number" class="form-control" type="text" data-rule-phoneUS="false" title="Please enter your phone number" data-msg-phoneUS="Ouch, that doesn't look like a valid phone number" required>
+</div>
+ 
+<div class="form-group">
+<textarea class="form-control" name="message" placeholder="Message" required data-rule-minlength="10" data-msg-minlength="Please enter atleast 10 characters" title="Please enter your message"></textarea>
+</div>
+ 
+<button type="submit" class="btn btn-block btn-warning" id="js-contact-btn"> SEND MESSAGE </button>
+<div id="js-contact-result" data-success-msg="Form submitted successfully." data-error-msg="Oops. Something went wrong."></div>
+</form>
+</div>
+
+<div class="col-md-6">
+<p><br>
+</p>
+<script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBG-PTl7vaAjV5Bkv6b9KXUeiMYVwPJlZA'></script><div style='overflow:hidden;height:450px;width:650px;'><div id='gmap_canvas' style='height:450px;width:650px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='https://travelaustria.co/'>India TV Series in Austria</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=b46664f2a331058b87b0e0113fca206590ccc46e'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:15,center:new google.maps.LatLng(17.696657,83.20242299999995),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(17.696657,83.20242299999995)});infowindow = new google.maps.InfoWindow({content:'<strong>NATIONAL NDT SERVICES</strong><br>Autonagar “B” Block , B-19/1,  1st Floor Near Canara Bank, Behind LIC Office,  Autonagar Industrial Estate, <br> Visakhapatanam<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+
+</div>
+
+</div>
+</section>
+<section class="contact-form">
+<div class="row form">
+
+
+</div>
+</section>
+</div>
+</main>
+ 
+ {% endblock %}

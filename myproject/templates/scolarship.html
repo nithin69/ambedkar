@@ -1,0 +1,57 @@
+    
+{% extends "base.html" %}
+
+{% block title %}My Maths{% endblock %}
+
+{% block content %}
+ 
+        <!-- ******CONTENT****** --> 
+        <div class="content container">
+            <div class="page-wrapper">
+                <header class="page-heading clearfix">
+                    <h1 class="heading-title pull-left">Scolarships</h1>
+                    <div class="breadcrumbs pull-right">
+                        <ul class="breadcrumbs-list">
+                            <li class="breadcrumbs-label">You are here:</li>
+                            <li><a href="/">Home</a><i class="fa fa-angle-right"></i></li>
+                            <li class="current">Scolarships</li>
+                        </ul>
+                    </div><!--//breadcrumbs-->
+                </header> 
+                <div class="page-content">                 
+                    <div class="row page-row">                     
+                        <div class="team-wrapper col-md-8 col-sm-7">  
+							{% for s in Scolarships %}
+                            <div class="row page-row" >
+									<figure class="thumb col-md-3 col-sm-4 col-xs-6">
+										<img class="img-responsive" src="media/{{s.image}}" style="width:165px; height:204px" alt="" />
+									</figure>
+								
+                                <div class="details col-md-9 col-sm-8 col-xs-6">
+                                    <h2 class="title">{{s.title}}</h2>
+                                    <a href="{{s.link}}"><h4>link</h4></a>
+                                    <p>{{s.description}}</p>     
+									<p><b>Phone : </b>{{s.phone}}</p>
+                                </div>                               
+                            </div>
+							{% endfor %}
+                        </div><!--//team-wrapper-->
+                        <aside class="page-sidebar  col-md-3 col-md-offset-1 col-sm-4 col-sm-offset-1">      
+                            <section class="links">
+                        <h1 class="section-heading text-highlight"><span class="line">Quick Links</span></h1>
+                        <div class="section-content">
+                            
+                            <p><a href="/scolarship/"><i class="fa fa-caret-right"></i>Scolarships</a></p>
+                            <p><a href="/jobs/"><i class="fa fa-caret-right"></i>Job Vacancies</a></p>
+                            <p><a href="/contact/"><i class="fa fa-caret-right"></i>Contact</a></p>
+                        </div><!--//section-content-->
+                    </section><!--//links-->              
+                           
+                        </aside>
+                    </div><!--//page-row-->
+                </div><!--//page-content-->
+            </div><!--//page--> 
+        </div><!--//content-->
+    </div><!--//wrapper-->
+
+{% endblock %}

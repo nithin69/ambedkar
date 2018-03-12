@@ -1,0 +1,123 @@
+{% extends "occ/base.html" %}
+
+{% block title %}SHABBAR MUSTAFA TRADING COMPANY{% endblock %}
+
+{% block body_block %}
+	<!--baner-->
+	<div class="baner about-bnr">
+		<div class="container">
+			<div class="baner-grids">
+				<div class="col-md-6 baner-top">
+					<img src="/static/occ-static/images/img16.jpg" alt=""/>
+				</div>
+				<div class="col-md-6 baner-top">
+					<img src="/static/occ-static/images/img17.jpg" alt=""/>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!--//baner-->
+	<!---728x90--->
+	<!--about-->
+	<div class="about"> 
+		<div class="container">
+			<h3 class="title">About Us</h3>
+			<div class="about-text">
+				<div class="col-md-6 about-text-left">
+					<img src="/static/occ-static/images/img11.jpg" class="img-responsive" alt=""/>
+				</div>
+				<div class="col-md-6 about-text-right">
+					<h4>Piece of classical by injected humourrandomised</h4>
+					<p>The point of using content here'orem Ipsum whichbut the majority have  passage of Lorem Ipsum, you need   
+						anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators making this the first true generato.</p>
+					<p>The point of using Lorem Ipsum is that it has a more-or-less normal 'Content here, content here'orem Ipsum whichbut the majority have  passage of Lorem Ipsum, you need to be sure there isn't  
+						anything embarrassing hidden in the middle of text</p>
+					<ul>
+						<li><a href="#">Donec quam andomised words.</a></li>
+						<li><a href="#">Etiam volutpa andomised words</a></li>
+						<li><a href="#">Varius fusce domised words.</a></li>
+					</ul>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<!---728x90--->
+		<div class="about-slid"> 
+			<div class="container">
+				<div class="about-slid-info"> 
+					<h2>Lorem Ipsum is has a moreless</h2>
+					<p>Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet embarrassing hidden in the middle of text.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!---728x90--->
+	<div class="about-team">		
+		<div class="container">
+			<h3 class="title">Our Products</h3>
+			<div class="row team-row">
+				<div class="col-sm-6 col-md-3 team-grids">
+					<div class="thumbnail team-thmnl">
+						<img src="/static/occ-static/images/img12.jpg" class="img-responsive zoom-img" alt="...">
+						<div class="caption">
+							<h4><a href="#">vaura tegsner</a></h4>
+							<p>Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary</p>						
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3 team-grids">
+					<div class="thumbnail team-thmnl">
+						<img src="/static/occ-static/images/img13.jpg" class="img-responsive zoom-img" alt="...">
+						<div class="caption">
+							<h4><a href="#">Jark Kohnson</a></h4>
+							<p>Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary</p>						
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3 team-grids">
+					<div class="thumbnail team-thmnl">
+						<img src="/static/occ-static/images/img14.jpg" class="img-responsive zoom-img" alt="...">
+						<div class="caption">
+							<h4><a href="#">goes mehak</a></h4>
+							<p>Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary</p>						
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3 team-grids">
+					<div class="thumbnail team-thmnl">
+						<img src="/static/occ-static/images/img15.jpg" class="img-responsive zoom-img" alt="...">
+						<div class="caption">
+							<h4><a href="#">Jark Kohnson</a></h4>
+							<p>Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary</p>						
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+
+	<!--smooth-scrolling-of-move-up-->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+			};
+			*/
+			
+			$().UItoTop({ easingType: 'easeOutQuart' });
+			
+		});
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	<!--//smooth-scrolling-of-move-up-->
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.js"></script>
+{% endblock %}

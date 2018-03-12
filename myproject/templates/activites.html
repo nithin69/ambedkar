@@ -1,0 +1,50 @@
+
+{% extends "base.html" %}
+
+{% block title %}My Maths{% endblock %}
+
+{% block content %}    
+        <!-- ******CONTENT****** --> 
+        <div class="content container">
+            <div class="page-wrapper">
+                <header class="page-heading clearfix">
+                    <h1 class="heading-title pull-left">Activites </h1>
+                    <div class="breadcrumbs pull-right">
+                        <ul class="breadcrumbs-list">
+                            <li class="breadcrumbs-label">You are here:</li>
+                            <li><a href="index-2.html">Home</a><i class="fa fa-angle-right"></i></li>
+                            <li class="current">Activites</li>
+                        </ul>
+                    </div><!--//breadcrumbs-->
+                </header> 
+                <div class="page-content">    
+                    
+                    <div class="row page-row">
+						{% for a in Activites %}
+                        <div class="col-md-4 col-sm-4 col-xs-12 text-center">
+                            <div class="album-cover">
+                                <img class="img-responsive" src="media/{{ a.image }}" alt="" style="width:358px; height:239px" />
+                                <div class="desc">
+                                    <h4><small>{{a.title}}</small></h4>
+                                    <p>{{a.description}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+
+                        
+                  
+                  
+                        
+               
+                        
+                        
+                        
+                    </div><!--//page-row-->
+                    
+                </div><!--//page-content-->
+            </div><!--//page--> 
+        </div><!--//content-->
+    </div><!--//wrapper-->
+
+{% endblock %}

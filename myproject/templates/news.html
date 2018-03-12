@@ -1,0 +1,60 @@
+    
+{% extends "base.html" %}
+
+{% block title %}My Maths{% endblock %}
+
+{% block content %}
+
+
+        <div class="content container">
+            <div class="page-wrapper">
+                <header class="page-heading clearfix">
+                    <h1 class="heading-title pull-left">News</h1>
+                    <div class="breadcrumbs pull-right">
+                        <ul class="breadcrumbs-list">
+                            <li class="breadcrumbs-label">You are here:</li>
+                            <li><a href="/">Home</a><i class="fa fa-angle-right"></i></li>
+                            <li class="current">News</li>
+                        </ul>
+                    </div><!--//breadcrumbs-->
+                </header> 
+                <div class="page-content">                 
+                    <div class="row page-row">                     
+                        <div class="team-wrapper col-md-8 col-sm-7">        
+                            <div class="row page-row" >
+                                <figure class="thumb col-md-3 col-sm-4 col-xs-6">
+                                    
+                                </figure>
+                                <div class="details col-md-9 col-sm-8 col-xs-6">
+						{% for n in News %}
+                            <div class="col-md-8 news-item">
+                                    <h2 class="title"><a href="news-single.html">{{n.title}}</a></h2>
+                                    <img class="thumb" style="width:100px; height:100px" src="media/{{ n.image }}"   alt="" />
+                                    <p>{{n.description}}</p>
+                            </div><!--//news-item-->
+								
+						{% endfor %}
+                                                
+                                </div>                               
+                            </div>
+
+                        </div><!--//team-wrapper-->
+                        <aside class="page-sidebar  col-md-3 col-md-offset-1 col-sm-4 col-sm-offset-1">      
+                            <section class="links">
+                        <h1 class="section-heading text-highlight"><span class="line">Quick Links</span></h1>
+                        <div class="section-content">
+                            
+                            <p><a href="/scolarship/"><i class="fa fa-caret-right"></i>Activites</a></p>
+                            <p><a href="/jobs/"><i class="fa fa-caret-right"></i>Job Vacancies</a></p>
+                            <p><a href="/contact/"><i class="fa fa-caret-right"></i>Contact</a></p>
+                        </div><!--//section-content-->
+                    </section><!--//links-->              
+                           
+                        </aside>
+                    </div><!--//page-row-->
+                </div><!--//page-content-->
+            </div><!--//page--> 
+        </div><!--//content--> 
+
+       
+{% endblock %}
